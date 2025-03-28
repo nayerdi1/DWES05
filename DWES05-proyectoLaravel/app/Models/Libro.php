@@ -10,6 +10,9 @@ class Libro extends Model
 {
 
     use HasFactory;
+    protected $table = 'libros';
+
+    protected $primaryKey = 'id';
     
     public $timestamps = false; 
     protected $fillable = ['titulo', 'autor', 'genero', 'disponible'];
